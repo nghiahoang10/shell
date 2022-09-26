@@ -45,7 +45,7 @@ int main(int argc, char ** argv) {
     if (root) {
         free(root);
     }
-    /*DIR * dir;
+    DIR * dir;
     struct dirent * ent;
     root = getNode();
     if ((dir = opendir(".")) != NULL) {
@@ -55,7 +55,7 @@ int main(int argc, char ** argv) {
             }
         }
         closedir(dir);
-    }*/
+    }
     struct sigaction ctrlc;
     ctrlc.sa_handler = ctrlc_handler;
     sigemptyset(&ctrlc.sa_mask);
